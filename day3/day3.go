@@ -43,9 +43,20 @@ func solve(graph []([]string)) {
 	}
 }
 
-func validateNumber(i int, line []string, graph []([]string)) (int, int) {
-	for isDigit(line[i]) {
+func validateNumber(x int, y int, line []string, graph []([]string)) (int, int) {
+	for isDigit(graph[x][y]) {
+		if x-1 > 0 {
 
+		}
+		if y-1 > 0 {
+
+		}
+		if x+1 < len(graph) {
+
+		}
+		if y+1 < len(graph[x]) {
+
+		}
 	}
 
 	return 0, 0
@@ -61,5 +72,5 @@ func isDigit(value string) bool {
 func main() {
 	input := "/Users/josephfarrell/git/aoc2023/day3/input"
 	graph := readFile(input)
-	println("test")
+	solve(graph)
 }

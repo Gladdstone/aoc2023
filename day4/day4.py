@@ -30,7 +30,7 @@ def solve_part_2(play_store: list) -> int:
   for i, play_values in enumerate(play_store):
     score = calculate_score(play_values)
     if score > 0:
-      corrective += 1 # this is so fucking stupid don't be like me kids stay in school
+      corrective += 1 # this is so fucking stupid don't be like me kids
       reprocess.append([i, score])
 
   for value in reprocess:
@@ -66,7 +66,7 @@ def calculate_score(play_values: list) -> int:
   return score
 
 def main():
-  input = "/Users/josephfarrell/git/aoc2023/day4/input"
+  input = "input"
 
   print(read_file(input))
 
